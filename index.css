@@ -25,7 +25,7 @@ aside h3 {
   }
 .rotate{
     transform: rotate(-90deg);
-  /* Legacy vendor prefixes that you probably don't need... */
+  /* Legacy vendor prefixes Optional... just keeping for future use if neccesery */
   /* Safari */
   -webkit-transform: rotate(-90deg);
   /* Firefox */
