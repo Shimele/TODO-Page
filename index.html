@@ -9,44 +9,58 @@
 <title>TODO</title>
 </head>
 <body>
+    <aside>
+    <h3 class="rotate">YOUR TODO LIST</h3>
     <div id="wrapper" class="border">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
-                <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                Clear your mind, make a list!
+                <img src="img/logo3.png" width="40" height="40" class="d-inline-block align-top" alt="">
+                <span class="header-text text-wrap">Plan It, Do It!</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <button type="button" class="btn btn-success open-button" onclick="openForm()">Add A Task</button>         
+            <!-- Button trigger modal or text form -->
+            <button type="button" class="btn" data-toggle="modal" data-target="#modalPopup">Add A Task</button>         
         </nav>
         <div id="task-display" class=".d-flex">
             <h4 class="border-bottom">TASKS</h4>
         </div>
-        <p class="text"><a onclick="openForm()">Creat new task</a> <br> <a onclick="openForm()">Add a new one!</a></p>
-        <footer class="clear"><hr></footer>
+        <div class="middle-text">
+        <p class="text"><a data-toggle="modal" data-target="#modalPopup">Creat new task</a> <br> <a data-toggle="modal" data-target="#modalLoginAvatar">Add a new one!</a></p>
+        </div>
+        <footer class="clear">
+            <hr>
+            <span class="footer-text text-wrap">“Procrastinate now, don’t put it off.”</span>
+            <span>— Ellen DeGeneres</span>
+        </footer>
 
-        <div class="form-popup" id="myForm">
-            <form action="/action_page.php" class="form-container">
-                <h1>Add a Task</h1>
-                <input class="border-bottom" type="text" placeholder="Task Name" required>
-                <button type="submit" class="btn">Add</button>
-                <button type="submit" class="btn cancel" onclick="closeForm()">Cancel</button>
-            </form>
+        <!-- Modal or text form-->
+        <div class="modal fade" id="modalPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog cascading-modal modal-avatar modal-md" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                        <img src="img/logo1.jpeg" alt="avatar" class="rounded-circle img-responsive" width="100px">
+                    </div>
+                    <!--Body-->
+                    <div class="modal-body text-center mb-1">
+                        <h5 class="mt-1 mb-2">Add Task</h5>
+                        <div class="md-form ml-0 mr-0">
+                            <input type="text" id="form" class="form-control form-control-md validate ml-0 border-top-0 border-left-0 border-right-0 border border-#F3BBBF">
+                            <label data-error="wrong" data-success="right" for="form" class="ml-0">Procrastinate now, don’t put it off</label>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button class="btn btn-cyan mt-1">Save<i class="fas fa-sign-in ml-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-
     </div>
-
-    <script>
-    function openForm() {
-        document.getElementById("myForm").style.display = "block";
-      }
-      
-      function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-      }
-    </script>
+    </aside>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

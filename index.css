@@ -3,33 +3,78 @@ body{
     padding: 0;
     height: 100%;
     width: 100%;
+    font-family: "Goudy Bookletter 1911", sans-serif;
+}
+aside{
+    display: block;
+    position: relative;
+}
+aside h3 {
+    font: bold 12px Sans-Serif;
+    letter-spacing: 2px;
+    background-image: url("img/background-image.jpeg");
+    color: #fff;
+    padding: 20px 20px 5px 5px;
+    position: absolute;
+    margin-top:15%;
+    width: 18%;
+    line-height: 9px;
+    border: 1px solid #A7002A;
+    text-align: center;
+    font-weight: bolder;
+  }
+.rotate{
+    transform: rotate(-90deg);
+  /* Legacy vendor prefixes that you probably don't need... */
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 #wrapper{
     width: 80%;
+    height: 100%;
     margin: 0 auto;
-    border-radius: 10px;
+}
+.navbar{
+    background-image: url("img/background-image.jpeg");
 }
 .navbar-brand{
-    margin-right: 40%;
+    margin-right: 50%;
 }
+.header-text{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
 #task-display{
-    height: 85%;
+    height: 80%;
     width: 20%;
-    background-color: rgb(9, 75, 9);
-    border: 3px solid #F8FD99;
+    border: 3px solid #A7002A;
     float: left;
 }
-h4{
+.btn{
+    background-color: #A7002A;
     color: white;
+}
+h4{
     padding-left: 30%;
     padding-top: 5%;
 }
+
 .text{
-    margin-left: 60%;
+    margin-left: 55%;
     margin-top: 15%;
 }
 .text:hover{
-    color: rgb(9, 75, 9);
+    color:#A7002A;
     cursor: pointer;
     font-weight: bold;
 }
@@ -41,76 +86,22 @@ footer{
 footer.clear {
     clear: both;
   }
+
   hr{
       width: 80%;
   }
+  span{
+      font-size: 10px;
+      padding-right: 10px;
+      align-self: auto;
+  }
+  .footer-text{
+      margin-left: 60%;
+  }
 
-  {box-sizing: border-box;}
-
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-  background-color:green;
-  color: white;
-  padding: 5px 9px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: relative;
+label{
+    font-size: 12px;
 }
-
-/* The popup form - hidden by default */
-.form-popup {
-  display: none;
-  position: fixed;
-  top: 35px;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-  border-radius: 10px;
-}
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 500px;
-  padding: 10px;
-  background-color: #F8F9FA;
-  margin: 0 auto;
-}
-
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #009436;
-  color: white;
-  padding: 10px 14px;
-  border: none;
-  cursor: pointer;
-  width: 30%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: #F8FD99;
-  font-weight: bold;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+input{
+    border:1px solid #F3BBBF !important; 
 }
