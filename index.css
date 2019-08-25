@@ -23,6 +23,37 @@ aside h3 {
     text-align: center;
     font-weight: bolder;
   }
+  @media only screen and (max-width: 600px) {
+    aside h3{
+        display: none;
+      }
+      #wrapper{
+        width: 100%;
+    }
+    .btn{
+        margin-left: 60%;
+    }
+    #task-display{
+        max-height: 50%;
+    }
+    .text{
+        margin-top:10% !important;
+        margin-left: 30% !important;
+     }
+     footer{
+        max-height: 2%;
+    }
+     .footer-text{
+        margin-left: 0 !important;
+        text-align: center;
+    }
+    span{
+        padding-right: 0 !important;
+        color: #f9b3bc;
+        font-weight: bolder;
+}
+
+
 .rotate{
     transform: rotate(-90deg);
   /* Legacy vendor prefixes Optional... just keeping for future use if neccesery */
@@ -56,10 +87,9 @@ aside h3 {
 
 #task-display{
     height: 80%;
-    width: 20%;
     border: 3px solid #A7002A;
-    float: left;
 }
+
 .btn{
     background-color: #A7002A;
     color: white;
@@ -70,8 +100,8 @@ h4{
 }
 
 .text{
-    margin-left: 55%;
-    margin-top: 15%;
+   margin-left: 45%;
+   margin-top: 40%;
 }
 .text:hover{
     color:#A7002A;
