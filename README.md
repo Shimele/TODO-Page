@@ -4,7 +4,7 @@ Building a modest TODO page with HTML CSS BOOTSTRAP
 
 ## Live demo
 
-file:///home/belynda/Documents/PROJECTS/TODO-PAGE/index.html
+https://shimele.github.io/TODO-Page/
 
 ## Contributors
 
