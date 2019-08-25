@@ -14,7 +14,7 @@ aside h3 {
     letter-spacing: 2px;
     background-image: url("img/background-image.jpeg");
     color: #fff;
-    padding: 20px 20px 5px 5px;
+    padding: 20px 30px 5px 5px;
     position: absolute;
     margin-top:15%;
     width: 18%;
@@ -47,10 +47,15 @@ aside h3 {
         margin-left: 0 !important;
         text-align: center;
     }
-    span{
+    footer span{
+        font-size: 10px !important;
         padding-right: 0 !important;
         color: #f9b3bc;
         font-weight: bolder;
+    }
+    .btn{
+        padding: 2xp;
+    }
 }
 
 
@@ -93,6 +98,7 @@ aside h3 {
 .btn{
     background-color: #A7002A;
     color: white;
+    font-weight: bold;
 }
 h4{
     padding-left: 30%;
@@ -120,7 +126,7 @@ footer.clear {
   hr{
       width: 80%;
   }
-  span{
+  footer span{
       font-size: 10px;
       padding-right: 10px;
       align-self: auto;
